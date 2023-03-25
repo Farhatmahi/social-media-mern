@@ -13,6 +13,10 @@ import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
 import { verifyToken } from "./middleware/auth.js";
+import { createPost } from "./controllers/postController.js";
+import User from "./models/User.js"
+import Post from "./models/post.js";
+import { users, posts } from "./data/data.js";
 
 // Configurations
 const PORT = process.env.PORT || 4000;
@@ -64,5 +68,9 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log("Server running on ", PORT));
+
+    // User.insertMany(users);
+    // Post.insertMany(posts);
+    
   })
   .catch((err) => console.error(err));
