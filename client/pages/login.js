@@ -8,9 +8,8 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const router = useRouter();
-
+  const { user, setUser } = useContext(UserContext);
   const handleSubmit = async (e) => {
-    // const { userInfo, setUserInfo } = useContext(UserContext);
     e.preventDefault();
     setMessage("");
     const loginUser = { email, password };
@@ -27,7 +26,7 @@ const LoginPage = () => {
         if (data.user) {
           localStorage.setItem("user", JSON.stringify(data.user));
           localStorage.setItem("token", data.token);
-          // setUserInfo(data.user)
+          setUser(data.user)
           router.push("/");
         } else {
           setMessage("Invalid credentials");

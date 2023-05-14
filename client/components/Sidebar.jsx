@@ -5,10 +5,10 @@ import { UserContext } from "@/context/UserContext";
 
 const Sidebar = () => {
   const [visible, setVisible] = useState(true);
-  // const { userInfo, setUserInfo } = useContext(UserContext);
-  // const {firstName, lastName} = userInfo
-  const userInfo = JSON.parse(localStorage.getItem("user"));
-  const { firstName, lastName } = userInfo;
+  const { user, setUser } = useContext(UserContext);
+  const {firstName, lastName} = user
+  // const userInfo = JSON.parse(localStorage.getItem("user"));
+  // const { firstName, lastName } = userInfo;
 
   return (
     <motion.aside
