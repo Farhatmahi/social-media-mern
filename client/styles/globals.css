@@ -8,11 +8,16 @@ body {
   font-family: "Space Grotesk", sans-serif;
 } */
 
-
+/* 
 
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap");
 
 body {
   font-family: "Urbanist", sans-serif;
-}
+} */
 
+@import url("https://fonts.cdnfonts.com/css/nekst");
+
+body {
+  font-family: "Nekst-Light", sans-serif;
+}

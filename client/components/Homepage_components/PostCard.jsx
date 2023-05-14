@@ -6,7 +6,7 @@ const PostCard = ({ data }) => {
   const { username, profile_picture, time_posted, image } = data;
   const [liked, setLiked] = useState(true);
   return (
-    <div className="border border-[#f9f9f9] rounded-xl flex flex-col justify-between items-center w-full p-4">
+    <div className="border border-[#f9f9f9] rounded-xl flex flex-col justify-between items-center w-full p-4 my-2">
       {/* header  */}
       <div className="flex justify-between items-center w-full">
         <div className="flex justify-start">

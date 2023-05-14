@@ -3,7 +3,7 @@ import Input_Photo from "./Input_Photo";
 
 const PostBox = () => {
   return (
-    <div className="bg-secondary px-6 py-4 rounded-xl mb-10">
+    <div className="bg-secondary px-6 py-4 rounded-xl mb-4">
       <form>
         <input
           type="text"
